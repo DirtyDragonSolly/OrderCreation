@@ -4,6 +4,6 @@ namespace OrderCreation.Services.Interfaces
 {
     public interface IOrderService
     {
-        public Guid CreateOrderByMetReq(MeterRequest meterRequest);
+        public long CreateOrderByMetReq(MeterRequest meterRequest);
     }
 }

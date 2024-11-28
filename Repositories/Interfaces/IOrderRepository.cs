@@ -4,6 +4,6 @@ namespace OrderCreation.Repositories.Interfaces
 {
     public interface IOrderRepository
     {
-        public void SaveOrder(Guid orderID, MeterRequest meterRequest);
+        public void SaveOrder(long orderID, MeterRequest meterRequest);
     }
 }

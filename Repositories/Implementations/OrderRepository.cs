@@ -5,7 +5,7 @@ namespace OrderCreation.Repositories.Implementations
 {
     public class OrderRepository : IOrderRepository
     {
-        public void SaveOrder(Guid orderID, MeterRequest meterRequest)
+        public void SaveOrder(long orderID, MeterRequest meterRequest)
         {
             // Здесь можно реализовать сохранение в базу данных, сейчас имитация
             Console.WriteLine($"Order {orderID} saved successfully.");

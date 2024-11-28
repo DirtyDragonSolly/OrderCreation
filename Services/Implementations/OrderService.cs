@@ -19,7 +19,7 @@ namespace OrderCreation.Services.Implementations
             _managerService = managerService;
         }
 
-        public Guid CreateOrderByMetReq(MeterRequest meterRequest)
+        public long CreateOrderByMetReq(MeterRequest meterRequest)
         {
             // Примерная логика для вычисления номера заказа и возвращения его
             double exchangeRate = _paymentService.GetExchangeRate();
@@ -27,8 +27,10 @@ namespace OrderCreation.Services.Implementations
             long currencyID = _paymentService.GetCurrencyID();
             long managerID = _managerService.GetManagerID();
 
-            // Пример создания заказа
-            var orderID = Guid.NewGuid();
+            // Имитация генерации айди заказа
+            long orderID = new Random().Next(0, 100000);
+
+            // Имитация создания заказа
             Console.WriteLine("Creating order with the following details:");
             Console.WriteLine($"Contact: {meterRequest.Contact}");
             Console.WriteLine($"Post Address: {meterRequest.PostAddr}");
