@@ -4,19 +4,19 @@ namespace OrderCreation.Services.Implementations
 {
     public class PaymentService : IPaymentService
     {
-        private double GetExchangeRate()
+        public double GetExchangeRate()
         {
             // Заглушка для получения курса обмена
             return 1.1;
         }
 
-        private long GetPaymentConditionID()
+        public long GetPaymentConditionID()
         {
             // Заглушка для получения ID условий оплаты
             return 1;
         }
 
-        private long GetCurrencyID()
+        public long GetCurrencyID()
         {
             // Заглушка для получения ID валюты
             return 1;

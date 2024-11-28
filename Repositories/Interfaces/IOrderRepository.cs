@@ -1,9 +1,9 @@
-﻿using OrderCreation.Models.Requests;
+﻿using OrderCreation.Models;
 
 namespace OrderCreation.Repositories.Interfaces
 {
     public interface IOrderRepository
     {
-        public void SaveOrder(long orderID, MeterRequest meterRequest);
+        public void SaveOrder(Guid orderID, MeterRequest meterRequest);
     }
 }

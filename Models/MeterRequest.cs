@@ -1,4 +1,4 @@
-﻿namespace OrderCreation.Models.Requests
+﻿namespace OrderCreation.Models
 {
     public class MeterRequest
     {
